@@ -1,0 +1,15 @@
+#+TITLE:calendar
+
+* Summary
+
+
+This is a simple calendar application written in the C programing language. It is file based which makes it simple for syncing between devices, e.g. with git or a cloud based service.
+
+
+* Target Platforms
+
+This application depends on a POSIX compatible environment. It has been successfully compiled and tested on following platforms:
+
+| *platform*  | *version* |
+|-------------+-----------|
+| Apple macOS | 10.13.2   |
