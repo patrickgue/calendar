@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CD8CAC091FF436BC002F8245 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CD8CAC081FF436BC002F8245 /* main.c */; };
+		CD8CAC111FF43DA6002F8245 /* calendar.c in Sources */ = {isa = PBXBuildFile; fileRef = CD8CAC101FF43DA6002F8245 /* calendar.c */; };
+		CD8CAC141FF43F3D002F8245 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = CD8CAC131FF43F3D002F8245 /* util.c */; };
+		CDAB82701FF67554007BF813 /* calfile.c in Sources */ = {isa = PBXBuildFile; fileRef = CDAB826F1FF67554007BF813 /* calfile.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		CD8CAC051FF436BC002F8245 /* calendar */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = calendar; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8CAC081FF436BC002F8245 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		CD8CAC0F1FF43B61002F8245 /* calendar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = calendar.h; sourceTree = "<group>"; };
+		CD8CAC101FF43DA6002F8245 /* calendar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = calendar.c; sourceTree = "<group>"; };
+		CD8CAC121FF43F3D002F8245 /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		CD8CAC131FF43F3D002F8245 /* util.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = util.c; sourceTree = "<group>"; };
+		CDAB826E1FF67554007BF813 /* calfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = calfile.h; sourceTree = "<group>"; };
+		CDAB826F1FF67554007BF813 /* calfile.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = calfile.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				CD8CAC081FF436BC002F8245 /* main.c */,
+				CD8CAC0F1FF43B61002F8245 /* calendar.h */,
+				CD8CAC101FF43DA6002F8245 /* calendar.c */,
+				CD8CAC121FF43F3D002F8245 /* util.h */,
+				CD8CAC131FF43F3D002F8245 /* util.c */,
+				CDAB826E1FF67554007BF813 /* calfile.h */,
+				CDAB826F1FF67554007BF813 /* calfile.c */,
 			);
 			path = calendar;
 			sourceTree = "<group>";
@@ -120,6 +135,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD8CAC091FF436BC002F8245 /* main.c in Sources */,
+				CD8CAC111FF43DA6002F8245 /* calendar.c in Sources */,
+				CDAB82701FF67554007BF813 /* calfile.c in Sources */,
+				CD8CAC141FF43F3D002F8245 /* util.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
