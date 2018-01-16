@@ -25,12 +25,22 @@ int main(int argc, const char * argv[]) {
     if(TESTING) {
         load_entries();
         
+        cal_entry_list list;
+        
+        
         cal_entry entry = create_cal_entry("title", "description", 1, 2);
+        add_to_cal_entry_list(&list, entry);
         printf("%s: %lu\n",entry.title, entry.entry_id);
         entry = create_cal_entry("title2", "description2", 1, 2);
+        add_to_cal_entry_list(&list, entry);
         printf("%s: %lu\n",entry.title, entry.entry_id);
         entry = create_cal_entry("title3", "description3", 1, 2);
+        add_to_cal_entry_list(&list, entry);
         printf("%s: %lu\n",entry.title, entry.entry_id);
+        
+        while(list.next_entry != NULL) {
+            printf("%s\n", list.entry->title);
+        }
     }
     else {
     
