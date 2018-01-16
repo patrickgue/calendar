@@ -30,12 +30,13 @@ typedef struct s_cal_config cal_config;
 
 
 struct s_cal_entry_list {
-    cal_entry entry;
+    cal_entry *entry;
     struct s_cal_entry_list *next_entry;
 };
 
 typedef struct s_cal_entry_list cal_entry_list;
 
 cal_entry create_cal_entry (char*, char*, unsigned long, unsigned long);
+cal_entry_list* add_to_cal_entry_list(cal_entry_list*, cal_entry);
 
 #endif /* calendar_h */
