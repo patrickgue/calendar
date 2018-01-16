@@ -32,19 +32,19 @@ cal_entry_list create_cal_entry_list() {
 }
 
 
-cal_entry_list add_to_cal_entry_list(cal_entry_list list, cal_entry entry) {
-    cal_entry_list temp, p;
+cal_entry_list * add_to_cal_entry_list(cal_entry_list *list, cal_entry entry) {
+    cal_entry_list temp, *p;
     temp = create_cal_entry_list();
-    temp.entry = entry;
-    /*if(list == NULL) {
-        list = temp;
+    temp.entry = &entry;
+    if(list == NULL) {
+        list = &temp;
     }
     else {
         p = list;
-        while(p.next_entry != NULL){
-            p = p.next_entry;
+        while(p->next_entry != NULL){
+            p = p->next_entry;
         }
-        p.next_entry = temp;
-    }*/
+        p->next_entry = &temp;
+    }
     return list;
 }
